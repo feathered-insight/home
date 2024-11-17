@@ -1,78 +1,101 @@
-/* General Reset */
-body, html {
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: white;
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
-    background: url('featheredback.png') no-repeat center center fixed;
+    background-color: black;
+    background-image: url('featheredback.png');
     background-size: cover;
-    color: #ffffff;
+    background-position: center;
+    background-blur: 5px;
 }
 
-/* Container Styling */
-.container {
+header {
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-/* Header Styling */
-.header {
-    text-align: center;
+    justify-content: space-between;
     padding: 20px;
-    background-color: rgba(128, 0, 32, 0.9); /* Bordeaux with transparency */
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
-.logo {
-    max-width: 150px;
-    height: auto;
+header .logo img {
+    height: 50px;
 }
 
-/* Main Section Styling */
-.main {
-    flex: 1;
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+section {
+    padding: 40px 20px;
     text-align: center;
-    padding: 50px 20px;
-    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black overlay */
-    border-top: 5px solid #800020;
-    border-bottom: 5px solid #800020;
 }
 
-.main h1 {
-    font-size: 3rem;
+section h2 {
+    color: #b22121;
+}
+
+section p {
     margin-bottom: 20px;
 }
 
-.main p {
-    font-size: 1.2rem;
-    line-height: 1.8;
-}
-
-/* Footer Styling */
-.footer {
-    background-color: rgba(128, 0, 32, 0.9); /* Bordeaux with transparency */
-    text-align: center;
-    padding: 20px;
-    font-size: 1rem;
-}
-
-.contact {
+.buttons {
     display: flex;
-    align-items: center;
     justify-content: center;
     gap: 10px;
 }
 
-.icon {
-    width: 20px;
-    height: 20px;
-}
-
-a {
-    color: #ffffff;
+.button {
+    padding: 10px 20px;
+    background-color: #b22121;
+    color: white;
     text-decoration: none;
-    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
-a:hover {
-    text-decoration: underline;
+.button:hover {
+    background-color: #8b1a1a;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 20px;
+}
+
+footer .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .contact a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .contact img {
+    height: 30px;
 }
