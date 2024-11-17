@@ -1,67 +1,121 @@
 /* Global Styles */
 body {
     font-family: Arial, sans-serif;
-    color: white;
     margin: 0;
     padding: 0;
     background-color: black;
+    color: white;
     background-image: url('featheredback.png');
     background-size: cover;
     background-position: center;
-    background-blur: 5px;
 }
 
-header {
+/* Bandeau supérieur */
+.top-banner {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.top-banner .top-banner-content {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
+    align-items: center;
 }
 
-header .logo img {
-    height: 50px; /* Ajustez la taille du logo si nécessaire */
+.top-banner .logo {
+    height: 60px;
 }
 
-nav ul {
+.top-banner p {
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+/* Menu de navigation */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.9);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-links {
     list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
+    justify-content: center;
 }
 
-nav ul li {
+.nav-links li {
     margin: 0 15px;
+    position: relative;
 }
 
-nav ul li a {
+.nav-links li a {
     text-decoration: none;
     color: white;
     font-size: 18px;
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s;
 }
 
-section {
+.nav-links li a:hover {
+    background-color: #b22121;
+}
+
+/* Menu déroulant */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #b22121;
+}
+
+/* Sections principales */
+main {
     padding: 40px 20px;
     text-align: center;
 }
 
-section h2 {
+h2 {
     color: #b22121;
-}
-
-section p {
-    margin-bottom: 20px;
 }
 
 .buttons {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
+    margin-top: 20px;
 }
 
 .button {
-    padding: 10px 20px;
+    padding: 15px 30px;
     background-color: #b22121;
     color: white;
     text-decoration: none;
     border-radius: 5px;
+    font-size: 16px;
     transition: background-color 0.3s;
 }
 
@@ -72,30 +126,54 @@ section p {
 ul {
     list-style-type: none;
     padding-left: 0;
+    margin-top: 20px;
 }
 
 ul li {
     margin: 10px 0;
+    font-size: 16px;
 }
 
-footer {
-    background-color: rgba(0, 0, 0, 0.7);
+/* Bandeau inférieur */
+.bottom-banner {
+    background-color: rgba(0, 0, 0, 0.8);
     text-align: center;
-    padding: 20px;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
-footer .contact {
+.footer-content {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
 
-footer .contact a {
+.footer-icon {
+    height: 30px;
+}
+
+footer a {
     color: white;
     text-decoration: none;
 }
 
-footer .contact img {
-    height: 30px;
+/* Responsive */
+@media (max-width: 768px) {
+    .top-banner .top-banner-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
