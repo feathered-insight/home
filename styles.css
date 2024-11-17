@@ -1,0 +1,78 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: url('featheredback.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+}
+
+/* Container Styling */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styling */
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(128, 0, 32, 0.9); /* Bordeaux with transparency */
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+}
+
+/* Main Section Styling */
+.main {
+    flex: 1;
+    text-align: center;
+    padding: 50px 20px;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black overlay */
+    border-top: 5px solid #800020;
+    border-bottom: 5px solid #800020;
+}
+
+.main h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.main p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: rgba(128, 0, 32, 0.9); /* Bordeaux with transparency */
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
