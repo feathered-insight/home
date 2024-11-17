@@ -8,6 +8,20 @@ body {
     background-image: url('featheredback.png');
     background-size: cover;
     background-position: center;
+    position: relative; /* Nécessaire pour la superposition */
+}
+
+/* Superposition d'une couleur semi-transparente pour estomper l'image */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Ajustez l'opacité pour estomper l'image */
+    z-index: -1; /* Assurez-vous que la superposition soit derrière le contenu */
+    backdrop-filter: blur(5px); /* Effet de flou */
 }
 
 /* Bandeau supérieur */
