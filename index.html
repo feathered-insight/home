@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,24 +7,66 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <img src="feathered-insight.png" alt="Feathered Insight Logo" class="logo">
-        </header>
-        <main class="main">
-            <h1>Welcome to Feathered Insight</h1>
-            <p>
-                Feathered Insight is your destination for cutting-edge discussions and insights into science and engineering.
-                We are committed to delivering innovative content that inspires, educates, and elevates.
-            </p>
-        </main>
-        <footer class="footer">
-            <p>Contact us:</p>
-            <div class="contact">
-                <img src="enveloppe.png" alt="Email Icon" class="icon">
-                <a href="mailto:feather.insight@gmail.com">feather.insight@gmail.com</a>
-            </div>
-        </footer>
-    </div>
+    <header>
+        <div class="logo">
+            <img src="feathered-insight.png" alt="Feathered Insight Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#aerospace">Actualité Aérospatiale</a></li>
+                <li><a href="#armament">Armement</a></li>
+                <li><a href="#aviation">Aviation</a></li>
+                <li><a href="#mechanics">Mécanique du Vol</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="aerospace">
+        <h2>Actualité Aérospatiale</h2>
+        <p>Découvrez les dernières avancées dans le domaine de l'aérospatiale, les nouvelles technologies et les missions spatiales récentes.</p>
+        <div class="buttons">
+            <a href="https://www.nasa.gov/" target="_blank" class="button">NASA - Exploration Spatiale</a>
+            <a href="https://www.spacex.com/" target="_blank" class="button">SpaceX - Innovateurs du spatial</a>
+            <a href="https://www.airbus.com/" target="_blank" class="button">Airbus - Nouvelles aéronautiques</a>
+        </div>
+    </section>
+
+    <section id="armament">
+        <h2>Armement Militaire</h2>
+        <p>Les différents types d'avions militaires et de missiles utilisés pour la défense mondiale.</p>
+        <ul>
+            <li><strong>Avions de chasse:</strong> Avions conçus pour attaquer d'autres avions et des cibles au sol.</li>
+            <li><strong>Missiles de croisière:</strong> Missiles à longue portée, capables de transporter des charges utiles et de frapper des cibles avec une grande précision.</li>
+            <li><strong>Avions de surveillance:</strong> Utilisés pour collecter des informations en temps réel et coordonner les opérations militaires.</li>
+        </ul>
+    </section>
+
+    <section id="aviation">
+        <h2>Aviation Civile</h2>
+        <p>Exploration des différents types d'avions civils et de leur fonctionnement.</p>
+        <ul>
+            <li><strong>Avions de ligne:</strong> Avions utilisés pour le transport de passagers à travers le monde.</li>
+            <li><strong>Avions privés:</strong> Avions utilisés pour des déplacements privés ou commerciaux.</li>
+            <li><strong>Avions de fret:</strong> Avions spécialisés dans le transport de marchandises.</li>
+        </ul>
+    </section>
+
+    <section id="mechanics">
+        <h2>Introduction à la Mécanique du Vol</h2>
+        <p>Les principes de base de la mécanique du vol, comprenant la portance, la poussée, la traînée et le poids.</p>
+        <ul>
+            <li><strong>Portance:</strong> Force qui permet à un avion de rester en vol, générée par les ailes.</li>
+            <li><strong>Poussée:</strong> Force produite par les moteurs pour déplacer l'avion en avant.</li>
+            <li><strong>Traînée:</strong> Résistance de l'air qui ralentit un avion en vol.</li>
+            <li><strong>Poids:</strong> Force gravitationnelle qui attire l'avion vers la Terre.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <div class="contact">
+            <img src="enveloppe.png" alt="Contact">
+            <p>Contactez-nous à : <a href="mailto:feather.insight@gmail.com">feather.insight@gmail.com</a></p>
+        </div>
+    </footer>
 </body>
 </html>
