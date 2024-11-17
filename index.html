@@ -7,64 +7,81 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="feather-insight.png" alt="Feathered Insight Logo">
+    <!-- Bandeau supérieur -->
+    <header class="top-banner">
+        <div class="top-banner-content">
+            <img src="feathered-insight.png" alt="Feathered Insight Logo" class="logo"> <!-- Logo mis à jour -->
+            <p>Bienvenue sur Feathered Insight - Explorez la science et l'ingénierie</p>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#aerospace">Actualité Aérospatiale</a></li>
-                <li><a href="#armament">Armement</a></li>
-                <li><a href="#aviation">Aviation</a></li>
-                <li><a href="#mechanics">Mécanique du Vol</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <section id="aerospace">
-        <h2>Actualité Aérospatiale</h2>
-        <p>Découvrez les dernières avancées dans le domaine de l'aérospatiale, les nouvelles technologies et les missions spatiales récentes.</p>
-        <div class="buttons">
-            <a href="https://www.nasa.gov/" target="_blank" class="button">NASA - Exploration Spatiale</a>
-            <a href="https://www.spacex.com/" target="_blank" class="button">SpaceX - Innovateurs du spatial</a>
-            <a href="https://www.airbus.com/" target="_blank" class="button">Airbus - Nouvelles aéronautiques</a>
-        </div>
-    </section>
-
-    <section id="armament">
-        <h2>Armement Militaire</h2>
-        <p>Les différents types d'avions militaires et de missiles utilisés pour la défense mondiale.</p>
-        <ul>
-            <li><strong>Avions de chasse:</strong> Avions conçus pour attaquer d'autres avions et des cibles au sol.</li>
-            <li><strong>Missiles de croisière:</strong> Missiles à longue portée, capables de transporter des charges utiles et de frapper des cibles avec une grande précision.</li>
-            <li><strong>Avions de surveillance:</strong> Utilisés pour collecter des informations en temps réel et coordonner les opérations militaires.</li>
+    <!-- Menu de navigation -->
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="#aerospace">Actualité Aérospatiale</a></li>
+            <li><a href="#armament">Armement</a></li>
+            <li><a href="#aviation">Aviation</a></li>
+            <li><a href="#mechanics">Mécanique du Vol</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Explorez</a>
+                <div class="dropdown-content">
+                    <a href="#aerospace">Actualité Spatiale</a>
+                    <a href="#armament">Armement Militaire</a>
+                    <a href="#aviation">Types d'Avions</a>
+                    <a href="#mechanics">Bases du Vol</a>
+                </div>
+            </li>
         </ul>
-    </section>
+    </nav>
 
-    <section id="aviation">
-        <h2>Aviation Civile</h2>
-        <p>Exploration des différents types d'avions civils et de leur fonctionnement.</p>
-        <ul>
-            <li><strong>Avions de ligne:</strong> Avions utilisés pour le transport de passagers à travers le monde.</li>
-            <li><strong>Avions privés:</strong> Avions utilisés pour des déplacements privés ou commerciaux.</li>
-            <li><strong>Avions de fret:</strong> Avions spécialisés dans le transport de marchandises.</li>
-        </ul>
-    </section>
+    <!-- Contenu principal -->
+    <main>
+        <section id="aerospace">
+            <h2>Actualité Aérospatiale</h2>
+            <p>Explorez les dernières avancées dans le domaine de l'aérospatiale.</p>
+            <div class="buttons">
+                <a href="https://www.nasa.gov/" target="_blank" class="button">NASA - Exploration Spatiale</a>
+                <a href="https://www.spacex.com/" target="_blank" class="button">SpaceX - Innovateurs du spatial</a>
+                <a href="https://www.airbus.com/" target="_blank" class="button">Airbus - Aéronautique</a>
+            </div>
+        </section>
 
-    <section id="mechanics">
-        <h2>Introduction à la Mécanique du Vol</h2>
-        <p>Les principes de base de la mécanique du vol, comprenant la portance, la poussée, la traînée et le poids.</p>
-        <ul>
-            <li><strong>Portance:</strong> Force qui permet à un avion de rester en vol, générée par les ailes.</li>
-            <li><strong>Poussée:</strong> Force produite par les moteurs pour déplacer l'avion en avant.</li>
-            <li><strong>Traînée:</strong> Résistance de l'air qui ralentit un avion en vol.</li>
-            <li><strong>Poids:</strong> Force gravitationnelle qui attire l'avion vers la Terre.</li>
-        </ul>
-    </section>
+        <section id="armament">
+            <h2>Armement Militaire</h2>
+            <p>Les différents types d'avions militaires et de missiles utilisés dans les conflits mondiaux.</p>
+            <ul>
+                <li><strong>Avions de chasse:</strong> Conçus pour attaquer d'autres avions et des cibles au sol.</li>
+                <li><strong>Missiles de croisière:</strong> Missiles longue portée à haute précision.</li>
+                <li><strong>Avions de surveillance:</strong> Utilisés pour collecter des informations en temps réel.</li>
+            </ul>
+        </section>
 
-    <footer>
-        <div class="contact">
-            <img src="enveloppe.png" alt="Contact">
+        <section id="aviation">
+            <h2>Aviation Civile</h2>
+            <p>Les différents types d'avions civils et leur utilisation dans le transport de passagers et de marchandises.</p>
+            <ul>
+                <li><strong>Avions de ligne:</strong> Utilisés pour le transport commercial de passagers.</li>
+                <li><strong>Avions privés:</strong> Utilisés pour des déplacements privés ou commerciaux.</li>
+                <li><strong>Avions de fret:</strong> Avions spécialisés dans le transport de marchandises.</li>
+            </ul>
+        </section>
+
+        <section id="mechanics">
+            <h2>Introduction à la Mécanique du Vol</h2>
+            <p>Les principes fondamentaux qui permettent aux avions de voler.</p>
+            <ul>
+                <li><strong>Portance:</strong> Force générée par les ailes pour maintenir l'avion en vol.</li>
+                <li><strong>Poussée:</strong> Force produite par les moteurs pour déplacer l'avion en avant.</li>
+                <li><strong>Traînée:</strong> Résistance de l'air qui freine l'avion.</li>
+                <li><strong>Poids:</strong> Force gravitationnelle qui attire l'avion vers le sol.</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Bandeau inférieur -->
+    <footer class="bottom-banner">
+        <div class="footer-content">
+            <img src="enveloppe.png" alt="Contact" class="footer-icon">
             <p>Contactez-nous à : <a href="mailto:feather.insight@gmail.com">feather.insight@gmail.com</a></p>
         </div>
     </footer>
